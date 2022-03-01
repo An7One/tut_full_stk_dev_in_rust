@@ -118,7 +118,7 @@ mod test {
         assert_eq!(v, Version::V1_1);
     }
     #[test]
-    fn test_read_http(){
+    fn test_read_http() {
         let s: String = String::from("GET /greeting HTTP/1.1\r\nHost: localhost:3000\r\nUser-Agent: curl/7.71.1\r\nAccept: */*\r\n\r\n");
         let headers_expected: HashMap<String, String> = {
             let mut map: HashMap<String, String> = HashMap::new();
